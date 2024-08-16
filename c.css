@@ -1,0 +1,213 @@
+/* Estilos básicos para toda la página con imagen de fondo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('LEO.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Encabezado con transparencia */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+header .logo img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+    transform: translateY(-5px);
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 150px 20px 20px 20px;
+}
+
+main h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+main p {
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Estilos de las tarjetas */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: rgba(33, 33, 33, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Asegura que los títulos sean blancos y estén centrados */
+.card h2 {
+    color: white; /* Color blanco para los títulos */
+    text-align: center; /* Asegura que estén centrados */
+    margin-bottom: 15px; /* Margen inferior para separar del contenido */
+}
+
+.card-logo {
+    width: 100px; /* Tamaño del logo */
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+}
+
+/* Estilos para la sección de logros */
+.achievements {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.achievement {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    width: 220px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.achievement h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.achievement img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+}
+
+.achievement p {
+    color: #bfc0c0;
+    font-size: 0.9em;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer .social-links a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    padding: 5px;
+}
+
+footer .social-links a:hover {
+    color: #ffcc00;
+    transform: translateY(-5px);
+}
